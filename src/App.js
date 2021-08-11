@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Assets/Styles/App.scss";
+import "aos/dist/aos.css";
+import "./Assets/Styles/_slick.scss";
+import "./Assets/Styles/_slickTheme.scss";
+
+import AOS from "aos";
+import Header from "./Components/Layouts/Header/Header";
+import HomePage from "./Screens/HomePage/HomePage";
 
 function App() {
+  AOS.init();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <HomePage />
     </div>
   );
 }

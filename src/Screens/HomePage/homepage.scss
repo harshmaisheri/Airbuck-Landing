@@ -1,0 +1,72 @@
+.homepage_container {
+  position: relative;
+  .img_container {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+    .bg_img {
+      object-fit: cover;
+      object-position: center bottom;
+      vertical-align: bottom;
+      width: 100%;
+    }
+  }
+
+  .text-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    z-index: 99;
+    margin-top: -20rem;
+    margin-bottom: 10rem;
+
+    h1 {
+      font-size: 20px;
+    }
+    .flexible_btn {
+      margin-top: 1rem;
+      border-radius: 54px;
+      background: #fff;
+      padding: 1.5rem 3rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: none;
+      }
+      span {
+        background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        overflow: clip;
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      &:hover {
+        background: #ebebeb;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage_container {
+    .text-title {
+      margin-top: -20rem;
+      margin-bottom: 10rem;
+    }
+  }
+}
